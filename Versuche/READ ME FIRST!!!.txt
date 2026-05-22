@@ -1,0 +1,20 @@
+1. .urp in polyscope öffnen
+2. Wichtige python libraries installieren(svgpathtools, shapely, time, matplotlib)
+3. Erst execution der python-script dann play button auf polyscope drucken fúr roboter simulation.
+4. wenn nach der Execution der python-script Matplotlib ein plot-fenster zum vorschau öffnet,dann bitte dieses Fenster schließen. 
+   sonst wird die script nicht weitergehen <------(SUPERWICHTIG)
+5.wenn docker schon installiert ist dann 
+  http://localhost:6080/vnc.html fúr URSIM simulation.
+6.wenn ihr simumatik nutzen wollt für bessere Grafik-Qualität der UR-Simulation dann nach der installation der Simulink app,
+  https://app.simumatik.com/workspace?server=local
+7.In simumatik web-editor--->load--->(sorting using UR5) oder (Showcase Universal robot) nutzen. dann connect gateway(polyscope(URSIM muss geöffnet sein für simumatik)
+8.Im versuch 3
+  wie viele punkte auf einer Linie mit "samples_per_segment = XXX" variieren.
+  grosse des quadrats mit  "scale =0.001/0.003" usw variieren
+9.Im versuch 4
+  Mindestabstand zur kante mit "min_edge_distance = XXX" variieren.
+  Mindestabstand zwischen klebepunkte mit  "spacing = XXX" variieren.
+  Im .urp sleep() nutzen um Jetter-Aktivierungszeit pro klebepunkt anzupassen.
+  wie viele punkte pro path mit "samples_per_segment = XXX" variieren(bei svgpathtools).
+  
+
